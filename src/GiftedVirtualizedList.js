@@ -53,7 +53,7 @@ export default class GiftedVirtualizedList extends React.Component {
 
   removeItem = (row) => {
     this.setState(({list}, {removeRow = l => l}) => ({
-      list: removeItem(list, row)
+      list: removeRow(list, row)
     }))
   }
 
